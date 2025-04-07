@@ -207,7 +207,7 @@
     
         addMessage("Typing...", "bot-message", true);
         
-    const res = await fetch("/query", {
+        const res = await fetch("/query", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ user_query: msg })
@@ -216,9 +216,6 @@
     
         const data = await res.json();
         const botResponse = data.response || "Something went wrong.";
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(html, "text/html");
-    
         removeTyping();
         addMessage(botResponse, "bot-message");
     }

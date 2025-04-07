@@ -323,7 +323,9 @@ def query_gemini(user_query):
 def query():
     data = request.get_json()
     user_query = data.get('user_query', '')
+    print(user_query)
     response = query_gemini(user_query)
+    print(response)
     return jsonify({'response': response})
 
 if __name__ == '__main__':
