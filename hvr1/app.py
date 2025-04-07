@@ -306,8 +306,30 @@ def query_gemini(user_query):
     top_college = top_rows.iloc[0]
     college_info = "\n".join([f"{col}: {top_college[col]}" for col in top_college.index])
  
-    prompt = f"User query: {user_query}\n\nBased on the following college details, answer the query :\n{college_info} from above data you cant answer refer this  data1:{data1}"
- 
+    prompt = f"""
+    You are an intelligent college admission assistant.
+
+    User Query:
+    {user_query}
+
+    Use the following retrieved context to answer the user's query:
+    {college_info}
+
+    If you cannot answer from the above, refer to this additional data:
+    {data1}
+
+    If relevant information is not available in either, then use your own knowledge to give the best possible answer.
+
+    Important Instructions:
+    - Provide the answer in a clear and structured format in 10-12 lines (use bullet points, tables, or steps).
+    - Keep the response concise and focused on the user’s question.
+    - Do not include irrelevant details.
+    - Never say “as an AI language model...”
+
+    Respond:
+    """
+
+
     payload = {"contents": [{"parts": [{"text": prompt}]}]}
     response = requests.post(url, json=payload, headers=headers)
     temp=response.json().get("candidates", [{}])[0].get("content", {}).get("parts", [{}])[0].get("text", "No response")

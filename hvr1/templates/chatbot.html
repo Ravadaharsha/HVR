@@ -1,0 +1,190 @@
+    <!-- Chatbot Icon Button -->
+    <div id="chatbot-icon" onclick="toggleChatbot()">
+        💬
+    </div>
+    
+    <!-- Chatbot Popup -->
+    <!-- Chatbot Icon -->
+    <div id="chatbot-icon" onclick="toggleChatbot()">💬</div>
+    
+    <!-- Chatbot Popup -->
+    <div id="chatbot-popup">
+        <div class="chat-header">Ask Me Anything!</div>
+        <div class="chat-messages" id="chat-messages"></div>
+        <form id="chat-form" onsubmit="sendMessage(event)">
+            <input type="text" id="chat-input" placeholder="Type your question..." autocomplete="off" required />
+            <button type="submit">➤</button>
+        </form>
+    </div>
+    
+    
+    <style>
+    /* Chat Icon */
+    #chatbot-icon {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: #007bff;
+        color: white;
+        padding: 15px;
+        border-radius: 50%;
+        font-size: 22px;
+        cursor: pointer;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    /* Chatbot icon */
+    #chatbot-icon {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: #007bff;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Popup styling */
+    #chatbot-popup {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        bottom: 100px;
+        right: 30px;
+        width: 350px;
+        height: 500px;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        z-index: 1000;
+    }
+    
+    .chat-header {
+        background-color: #007bff;
+        color: white;
+        padding: 12px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    /* Messages */
+    .chat-messages {
+        flex: 1;
+        padding: 12px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #f5f5f5;
+    }
+    
+    .message {
+        max-width: 75%;
+        padding: 10px 14px;
+        border-radius: 16px;
+        font-size: 14px;
+        line-height: 1.4;
+        word-wrap: break-word;
+    }
+    
+    .user-message {
+        align-self: flex-end;
+        background-color: #d1e7ff;
+        color: #000;
+        border-bottom-right-radius: 0;
+    }
+    
+    .bot-message {
+        align-self: flex-start;
+        background-color: #e9ecef;
+        color: #000;
+        border-bottom-left-radius: 0;
+    }
+    
+    /* Chat input */
+    #chat-form {
+        display: flex;
+        border-top: 1px solid #ccc;
+        padding: 10px;
+        background-color: white;
+    }
+    
+    #chat-input {
+        flex: 1;
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        outline: none;
+    }
+    
+    #chat-form button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        margin-left: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    </style>
+    
+    <script>
+        function toggleChatbot() {
+            const popup = document.getElementById("chatbot-popup");
+            popup.style.display = popup.style.display === "flex" ? "none" : "flex";
+        }
+        
+        async function sendMessage(event) {
+            event.preventDefault();
+        
+            const input = document.getElementById("chat-input");
+            const msg = input.value.trim();
+            if (!msg) return;
+        
+            addMessage(msg, "user-message");
+            input.value = "";
+        
+            addMessage("Typing...", "bot-message", true);
+            
+            const res = await fetch("/query", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ user_query: msg })
+            });
+    
+        
+            const data = await res.json();
+            const botResponse = data.response || "Something went wrong.";
+            removeTyping();
+            addMessage(botResponse, "bot-message");
+        }
+        
+        function addMessage(text, className, isTyping = false) {
+            const chat = document.getElementById("chat-messages");
+            const msg = document.createElement("div");
+            msg.className = `message ${className}`;
+            msg.textContent = text;
+            if (isTyping) msg.id = "typing-msg";
+            chat.appendChild(msg);
+            chat.scrollTop = chat.scrollHeight;
+        }
+        
+        function removeTyping() {
+            const typing = document.getElementById("typing-msg");
+            if (typing) typing.remove();
+        }
+        </script>
+        
+    
