@@ -1,0 +1,80 @@
+NIT Trichy is a highly-ranked college (overall rating 4.1) with excellent infrastructure (4.3) and strong placement records (4.3), boasting a highest package of INR 52.89 LPA in 2023 (average varying by department,  CSE at INR 27.27 LPA).  Tuition is INR 180,000 and hostel fees are approximately INR 46,000.  While it offers a vibrant social life (4.4) and diverse extracurriculars,  the large campus (located 20 km from the city, with convenient airport and railway access) has strict rules, including attendance and curfew policies, and a predominantly Tamil-speaking student body which some find challenging.
+
+
+
+NIT Surathkal is a highly-ranked college (average ratings 4.1-4.4 across academics, faculty, infrastructure, placements, and social life) with a strong placement record (92.99% placement rate in 2023, highest package ₹54.75 LPA, average B.Tech package ₹18.26 LPA).  Tuition fees are ₹163,700, and hostel fees are approximately ₹35,310.  Positive aspects include a beautiful campus, strong alumni network, and ample extracurricular activities, while negative aspects include subpar mess food, potential language barriers, and less-than-ideal hostel conditions.  The college is conveniently located near a railway station and airport.
+
+
+
+NIT Warangal is a highly-rated college (average rating 4.0 across various aspects) with a strong emphasis on academics and extracurriculars.  Tuition is ₹207,000, and hostel fees vary widely by room type and occupancy, ranging from ₹9900 to ₹22000.  While the final 2024 placement report is pending, preliminary data shows a high placement rate (76%-82%), with a reported highest package of ₹88 LPA and an average around ₹15-17 LPA.  Positive aspects include excellent placement opportunities and a vibrant campus life; however, some drawbacks include subpar hostel conditions, inconvenient dispensary hours, and occasional infrastructure deficiencies.
+
+
+
+MNIT Allahabad is a college with a strong emphasis on placement, boasting an average package of over ₹20 LPA for B.Tech graduates and participation from companies like Airtel, Deloitte, and Oracle.  Tuition is ₹168,000, and hostel fees are ₹37,000 per semester.  While the college receives high ratings for academics (4.3), faculty (4.2), infrastructure (4.4), and placements (4.4),  shortcomings include limited funding for extracurriculars, a heavy focus on placements, and occasionally less-than-ideal teaching methods.  The infrastructure is considered relatively small, and the campus has limited resources such as library and gym facilities.  The college is conveniently located near Prayagraj railway station and Allahabad airport.
+
+
+
+NIT Calicut is a highly-rated college (average rating 3.95 across various categories) with a yearly tuition fee of ₹318,786 and additional hostel and mess fees totaling ₹64,120.  While 2024 placement data is pending, 2023 saw an 84.76% placement rate with 1144 students placed across various programs (median packages ranging from ₹5.30 LPA to ₹11.70 LPA, highest at ₹50 LPA and average at ₹13.77 LPA).  Students praise the campus, facilities (including wheelchair access), and vibrant social life, but cite concerns about transportation, inconsistent hostel services, and the distance between the architecture department and hostels.  The college is located 20-22 km from both Kozhikode railway station and Calicut airport.
+
+
+
+NIT Rourkela is a highly-ranked college (overall rating 4.0) with excellent infrastructure (4.3) and a vibrant social life (4.4), boasting a strong placement record (4.1) including a 2023 average package of INR 13.89 LPA and a highest package of INR 83.60 LPA (though 2024 data is pending).  Tuition fees are INR 248,000, and hostel fees range from INR 4000-5000 per year.  While it offers a strong academic program (3.9 faculty rating), students may find the strict attendance, small hostel rooms, remote location, slow internet, and ongoing construction inconvenient.  Top recruiters include Apple, Google, and VISA.
+
+
+
+NIT Delhi is a college with a strong academic reputation (3.8/5 rating), offering excellent placement opportunities (4.0/5 rating, though 2023 data is unavailable; 2021 saw 88.8% placement with an average package of INR 10.054 LPA and a highest of INR 46 LPA).  While boasting strong sports facilities, a supportive environment, and good infrastructure (3.7/5), it suffers from a small campus with limited facilities (library, auditorium, hostel, mess), ongoing construction impacting its appearance, and a need for improvement in its clubs and cultural events.  Tuition is INR 161,600, with hostel fees ranging from INR 18,000 to INR 28,000.  The campus is located 4km from Narela railway station and 14.1km from Indira Gandhi International Airport.
+
+
+
+VNIT Nagpur is a college with a 150,950 INR tuition fee and offers a vibrant campus life with good infrastructure (4.5 rating), qualified faculty (4.2), and excellent sports facilities, though some facilities are outdated.  While the average placement package for 2025 B.Tech graduates was 10.68 LPA (highest 34.10 LPA, lowest 4.80 LPA),  student reviews suggest varying placement experiences, with CSE placements particularly strong but overall satisfaction mixed.  Hostel fees range from 15,250 to 17,250 INR per semester, and the campus boasts convenient transport links.  The college has a 4.1 overall academic rating, though students cite a hectic schedule and outdated courses as drawbacks.
+
+
+
+MNIT Jaipur is a college with a tuition fee of ₹179,265.  Its 2024 placements saw 29 companies participate, with a highest salary of ₹64 LPA offered by DE Shaw.  Placement rates were 81.51% for UG and 66.10% for PG students in the previous year.  Student ratings average around 4.2 for academics, accommodation, and social life, 4.0 for faculty and placement, and 4.4 for infrastructure.  While the college boasts a vibrant campus life, strong extracurricular activities, and a good location near Jaipur's railway station and airport,  it faces challenges including subpar hostel maintenance, inadequate hospital infrastructure, and some faculty shortcomings.  Hostel fees range from ₹32,000 to ₹47,000 per semester.
+
+
+
+NIT Surat (SVNIT) is a nationally recognized institute with a strong alumni network and supportive faculty, offering a vibrant campus life with various student activities and good sports facilities.  The annual tuition is ₹169,000, with hostel fees ranging from ₹37,200 to ₹42,500.  While the 2022 placement drive saw 850 placements out of 1204 registered students, with a highest package of ₹49.96 LPA,  some drawbacks include inadequate lab equipment, poor dispensary facilities,  politics in student clubs, and occasional infrastructural issues.  Placement rates are higher for B.Tech. than M.Sc. degrees, and scholarship opportunities are limited for integrated courses.  The college is located 2.46 km from Surat railway station and 12.5 km from Surat Airport.
+
+
+
+NIT Jamshedpur is a college with a ₹163,000 tuition fee and a strong placement record, boasting a 98.87% placement rate in the previous year with an average package of ₹15.98 LPA and a highest package of ₹83 LPA.  Student reviews highlight excellent placement and internship opportunities (458 six-month internship offers), good facilities (well-equipped hostels and labs), and a positive learning environment. However, criticisms include relatively small fests, less-than-ideal hostel hygiene, outdated course content, limited sports facilities, occasional internet issues, open campus access concerns, vehicle restrictions, lack of recreational spaces, and absence of an auditorium.  Hostel fees are ₹15,000 per year. The campus is conveniently located near Tatanagar Junction railway station.
+
+
+
+NIT Durgapur is a college with a high tuition fee (INR 173,700) and a relatively high hostel fee (approximately INR 11,200 per semester).  The 2023 placement saw 633 students placed with an average salary of INR 13.64 LPA and a highest package of INR 70 LPA.  Student reviews highlight excellent infrastructure, a large campus, and generally friendly faculty, but also cite concerns about outdated labs, a low female-to-male ratio, high fees, and occasionally boring lectures.  The college receives high ratings for infrastructure, placement, and social life, but lower scores for accommodation.  Transportation options include proximity to Durgapur Railway Station and Kazi Nazrul Islam Airport.
+
+
+
+MNIT Bhopal is a college with a tuition fee of ₹155,400, offering a large campus with good sports facilities and a relatively high average placement package of ₹15.5 LPA (highest ₹82 LPA in 2023-24).  Student reviews highlight excellent faculty and a vibrant social life, but also cite concerns regarding outdated infrastructure, limited gym access, a prevalent senior-junior culture, and academic pressure.  Hostel fees range from ₹25,000-₹26,000 per semester, and the campus is conveniently located near transportation hubs.
+
+
+
+NIT Patna is a college with a tuition fee of ₹260,500 and an additional ₹29,500 for hostel fees.  While 2024 placement data is unavailable, 2023 saw over 120 recruiters placing 609 students, with a highest package of ₹52 LPA and an average of ₹14 LPA.  Student reviews highlight a positive campus life with active clubs and good facilities, but cite concerns regarding hostel accommodations, limited placement opportunities (particularly in architecture), excessive assignments, outdated teaching methods, and inadequate sports facilities.  The campus is conveniently located near Bihta railway station and Jay Prakash Narayan Airport.
+
+
+
+NIT Jalandhar is a college with a ₹147,000 tuition fee and a ₹27,500 hostel fee.  Its 2023 placement rate was 80.63%, with an average package of ₹12.44 LPA and a highest package of ₹51 LPA, achieved through recruitment from companies like Microsoft and Google.  Student reviews praise the faculty, infrastructure (rated 4.0), social life (4.1), and emergency health facilities, but criticize limited bus services, mandatory 75% attendance, early curfew hours, and inconsistent mess food quality.  The college is located 12km from Jalandhar City railway station and 20.9km from Adampur Airport.
+
+
+
+NIT Kurukshetra is a college with a yearly tuition fee of ₹184,000.  Student reviews praise its faculty (4.0/5), infrastructure (4.2/5), and social life (4.3/5), noting good placement opportunities (4.1/5), especially for B.Tech students in CS/IT/ECE, with a highest package of ₹62.75 LPA and an average of ₹14.16 LPA (B.Tech) and ₹10.60 LPA (PG) in 2023.  However, some criticisms include outdated infrastructure, an outdated curriculum, inconvenient mess timings, limited campus outlets, and administrative inefficiencies.  Hostel fees range from ₹4,200 to ₹10,500 depending on room type.  The campus is located 6.2 km from Kurukshetra Junction railway station and 70 km from Chandigarh International Airport.
+
+
+
+NIT Silchar is a college with a 600-acre campus offering a strong academic environment (4.0/5.0 rating) and high placement rates (4.1/5.0), with 97 students receiving 537 offers in 2022, including a highest package of INR 44 LPA.  Tuition is INR 135,740 and hostel fees are INR 22,500.  Students praise the supportive senior community, cultural activities, and well-stocked library, but cite concerns regarding limited accommodation during events, poor internet connectivity, underdeveloped surrounding area, uneven gender ratio, average food quality, and a demanding academic schedule.
+
+
+
+NIT Uttarakhand is a college with a tuition fee of ₹160,980 and hostel fees ranging from ₹72,824 to ₹2,66,096.  The 2023 placement saw 74 offers, with 79.49% of B.Tech and 45.45% of M.Tech students placed, a highest package of ₹21 LPA, and an average of ₹11 LPA.  Student reviews praise the faculty, location, and proximity of hostels to lecture halls, but criticize the poor infrastructure, lack of sports facilities, limited food options, and inadequate transport.  The college is currently operating from a temporary campus.
+
+
+
+NIT Hamirpur is a college with a tuition fee of ₹180,200.  Its 2023 placement saw a 72.65% placement rate with 690 students placed, a median package of ₹8.25 LPA (B.Tech) and ₹7.50 LPA (M.Tech), and a highest package of ₹173 LPA.  Student reviews praise the helpful staff, affordable tuition, good placements and internships, and the campus environment, but criticize the mess food, lack of campus transportation, and inadequate health center facilities.  Hostel fees range from ₹25,200 to ₹40,000 per semester.  The nearest railway station is Una (80km) and airport is Dharamshala (75km).
+
+
+
+NIT Raipur is a college with a tuition fee of ₹142,820.  While 2024 placement data is incomplete, the highest package offered so far is ₹58 LPA, with the 2023 highest and average packages at ₹55 LPA and ₹13.75 LPA respectively.  Student reviews praise the lab facilities, faculty, and social life (rated 4.1), but criticize the small, outdated campus, limited hostel space, inadequate sports facilities, and high mess fees.  The overall ratings average around 3.8, indicating a decent but not exceptional experience.  Transportation is readily available, with proximity to both a railway station and airport.
+
+
+
