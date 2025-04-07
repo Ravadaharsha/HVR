@@ -1,5 +1,12 @@
 from flask import Flask, render_template, request, jsonify
+import faiss
+import numpy as np
+import pandas as pd
+import re
+import requests
+from sentence_transformers import SentenceTransformer
 import mysql.connector
+Q=""
 
 app = Flask(__name__)
 
@@ -76,12 +83,12 @@ def get_branches():
         return jsonify(results)
     
     except Exception as e:
-        print(" Error:", str(e))  # Print error in console
+        print("❌ Error:", str(e))  # Print error in console
         return jsonify({"error": str(e)}), 500
 
 # API to get college name suggestions
 @app.route('/getting_colleges')
-def getting_colleges(): 
+def getting_colleges():
     try:
         search_query = request.args.get('query', '')
         conn = get_db_connection()
@@ -235,6 +242,89 @@ def get_suggested_colleges():
         print("Error:", str(e))
         return jsonify({"error": str(e)}), 500
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Load the sentence embedding model
+model = SentenceTransformer('all-MiniLM-L6-v2')
+ 
+# Define the Gemini API key
+api_key = "AIzaSyBkGPBmqWGU8zrKg01NiJK63XYTww7efp4"  # Replace with your actual API key
+url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
+headers = {"Content-Type": "application/json"}
+ 
+# Sample college data (Replace with actual dataset)
+data = pd.read_csv('newcollegedata.csv')
+# print(data['collegename'])
+with open("random3.txt", "r", encoding="utf-8", errors="ignore") as file:
+    data1 = file.read()
+df = pd.DataFrame(data)
+ 
+# Combine all columns into a single text representation for embeddings
+df['text'] = df.apply(lambda row: f"{row['collegename']} - Tuition: {row['tuitionfees']}, Placement: {row['placement']}, Academics: {row['academic']}, Likes: {row['likes']}, Dislikes: {row['dislikes']}", axis=1)
+ 
+# Generate embeddings
+embeddings = model.encode(df['text'].tolist(), convert_to_numpy=True)
+ 
+# Store in FAISS
+dimension = embeddings.shape[1]
+index = faiss.IndexFlatL2(dimension)
+index.add(embeddings)
+ 
+# Function to retrieve relevant college data
+def retrieve_college_info(query):
+    for college in df['collegename']:
+        if re.search(college, query, re.IGNORECASE):
+            return df[df['collegename'] == college]
+ 
+    query_embedding = model.encode([query], convert_to_numpy=True)
+    D, I = index.search(query_embedding, k=1)
+    return df.iloc[I[0]]
+ 
+# Function to query Gemini API with retrieved college data
+def query_gemini(user_query):
+    global Q
+    top_rows = retrieve_college_info(user_query)
+    top_college = top_rows.iloc[0]
+    college_info = "\n".join([f"{col}: {top_college[col]}" for col in top_college.index])
+ 
+    prompt = f"User query: {user_query}\n\nBased on the following college details, answer the query :\n{college_info} from above data you cant answer refer this  data1:{data1}"
+ 
+    payload = {"contents": [{"parts": [{"text": prompt}]}]}
+    response = requests.post(url, json=payload, headers=headers)
+    temp=response.json().get("candidates", [{}])[0].get("content", {}).get("parts", [{}])[0].get("text", "No response")
+    plain_text = re.sub(r'(\*\*|\*|__|_)', '', temp)
+    Q=Q+plain_text
+    # print(Q)
+    if response.status_code == 200:
+        return plain_text
+    else:
+        return "Error fetching response from Gemini API."
+    
+@app.route('/query', methods=['POST'])
+def query():
+    data = request.get_json()
+    user_query = data.get('user_query', '')
+    response = query_gemini(user_query)
+    return jsonify({'response': response})
 
 if __name__ == '__main__':
     app.run(debug=True)
