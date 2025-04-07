@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEE Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">JEE College Predictor</h1>
+        <p class="description">Find the best college and branch based on your JEE rank.</p>
+
+        <div class="card-container">
+            <a href="{{ url_for('college_query') }}?type={{ type }}" class="card">
+                <h2>🏛️ College-wise Predictor</h2>
+                <p>Find eligible branches for a specific college.</p>
+            </a>
+            <a href="{{ url_for('branch_query') }}?type={{ type }}" class="card">
+                <h2>📚 Branch-wise Predictor</h2>
+                <p>Find colleges offering a specific branch.</p>
+            </a>
+            <a href="{{ url_for('category_query') }}?type={{ type }}" class="card">
+                <h2>🏫 Category-wise Predictor</h2>
+                <p>Find colleges from a specific category.</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

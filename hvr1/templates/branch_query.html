@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Colleges by Branch</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='tempstyle.css') }}">
+</head>
+<body>
+    <h1>Find Colleges Offering a Specific Branch</h1>
+    
+    <form id="branch-form">
+        <label for="branch">Branch Name:</label>
+        <input type="hidden" id="query-type" value="{{ type }}">
+        <input type="text" id="branch" name="branch" autocomplete="off" placeholder="Start typing a branch...">
+        <div id="branch-suggestions" class="suggestions-box"></div> <!-- Branch suggestions -->
+
+        <label for="seat_type">Seat Type:</label>
+        <select id="seat_type" name="seat_type">
+            <option value="OPEN">General</option>
+            <option value="EWS">EWS</option>
+            <option value="OBC-NCL">OBC-NCL</option>
+            <option value="SC">SC</option>
+            <option value="ST">ST</option>
+        </select>
+
+        <label for="quota">Quota:</label>
+        <select id="quota" name="quota">
+            <option value="HS">Home State</option>
+            <option value="OS">Other State</option>
+        </select>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="Gender-Neutral">Gender-Neutral</option>
+            <option value="Female-only (including Supernumerary)">Female</option>
+        </select>
+
+        <label for="category_rank">Category Rank:</label>
+        <input type="number" id="category_rank" name="category_rank" required>
+
+        <button type="submit">Find Colleges</button>
+    </form>
+
+    <h2>Eligible Colleges</h2>
+    <ul id="college-results"></ul>
+
+    <script src="{{ url_for('static', filename='script2.js') }}"></script>
+</body>
+</html>
