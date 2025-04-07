@@ -76,12 +76,12 @@ def get_branches():
         return jsonify(results)
     
     except Exception as e:
-        print("❌ Error:", str(e))  # Print error in console
+        print(" Error:", str(e))  # Print error in console
         return jsonify({"error": str(e)}), 500
 
 # API to get college name suggestions
 @app.route('/getting_colleges')
-def getting_colleges():
+def getting_colleges(): 
     try:
         search_query = request.args.get('query', '')
         conn = get_db_connection()
