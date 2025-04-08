@@ -318,7 +318,7 @@ def query_gemini(user_query):
     If you cannot answer from the above, refer to this additional data:
     {data1}
 
-    If relevant information is not available in either, then use your own knowledge to give the best possible answer.
+    If relevant information is not available in either, then use your own knowledge to give the best possible answer Don't try to explain that information is not available generate answer what you know.
 
     Important Instructions:
     - Provide the answer in a clear and structured format in 10-12 lines (use bullet points, tables, or steps).
